@@ -1,0 +1,6 @@
+colorama
+requests
+dhooks
+discord.webhook
+discord
+selenium
