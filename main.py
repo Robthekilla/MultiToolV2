@@ -15,11 +15,11 @@ with open('theme.json') as f:
 theme = t__.get('theme')
 if theme == "blue":
     c = Fore.CYAN
-if theme == "red":
+elif theme == "red":
     c = Fore.RED
-if theme == "purple":
+elif theme == "purple":
     c = Fore.MAGENTA
-if theme == "green":
+elif theme == "green":
     c = Fore.LIGHTGREEN_EX
 else:
     os.system("cls")
@@ -42,7 +42,7 @@ def menu():
                      {Fore.WHITE}██{Fore.LIGHTCYAN_EX}║ ╚═╝ {Fore.WHITE}██{Fore.CYAN}║╚{Fore.WHITE}██████{Fore.CYAN}╔╝{Fore.WHITE}███████{Fore.CYAN}╗{Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║       {Fore.WHITE}██{Fore.LIGHTBLUE_EX}║   ╚{Fore.WHITE}██████{Fore.LIGHTBLUE_EX}╔╝╚{Fore.WHITE}██████{Fore.LIGHTBLUE_EX}╔╝{Fore.WHITE}███████{Fore.BLUE}╗
                      {Fore.LIGHTCYAN_EX}╚═╝     ╚{Fore.CYAN}═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝       {Fore.LIGHTBLUE_EX}╚═╝    ╚═════╝  ╚═════╝ ╚{Fore.BLUE}══════╝""")
         print(f"{Fore.LIGHTCYAN_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.LIGHTBLUE_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    if theme == "red":
+    elif theme == "red":
         print(Fore.RED+"")
         print(f"""                     {Fore.WHITE}███{Fore.LIGHTRED_EX}╗   {Fore.WHITE}███{Fore.RED}╗{Fore.WHITE}██{Fore.RED}╗   {Fore.WHITE}██{Fore.RED}╗{Fore.WHITE}██{Fore.RED}╗  {Fore.WHITE}████████{Fore.RED}╗{Fore.WHITE}██{Fore.RED}╗    {Fore.WHITE}████████{Fore.LIGHTRED_EX}╗ {Fore.WHITE}██████{Fore.LIGHTRED_EX}╗  {Fore.WHITE}██████{Fore.LIGHTRED_EX}╗ {Fore.WHITE}██{Fore.RED}╗               
                      {Fore.WHITE}████{Fore.LIGHTRED_EX}╗ {Fore.WHITE}████{Fore.RED}║{Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║{Fore.WHITE}██{Fore.RED}║  ╚══{Fore.WHITE}██{Fore.RED}╔══╝{Fore.WHITE}██{Fore.RED}║    {Fore.LIGHTRED_EX}╚══{Fore.WHITE}██{Fore.LIGHTRED_EX}╔══╝{Fore.WHITE}██{Fore.LIGHTRED_EX}╔═══{Fore.WHITE}██{Fore.LIGHTRED_EX}╗{Fore.WHITE}██{Fore.LIGHTRED_EX}╔═══{Fore.WHITE}██{Fore.LIGHTRED_EX}╗{Fore.WHITE}██{Fore.RED}║
@@ -51,7 +51,7 @@ def menu():
                      {Fore.WHITE}██{Fore.LIGHTRED_EX}║ ╚═╝ {Fore.WHITE}██{Fore.RED}║╚{Fore.WHITE}██████{Fore.RED}╔╝{Fore.WHITE}███████{Fore.RED}╗{Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║       {Fore.WHITE}██{Fore.LIGHTRED_EX}║   ╚{Fore.WHITE}██████{Fore.LIGHTRED_EX}╔╝╚{Fore.WHITE}██████{Fore.LIGHTRED_EX}╔╝{Fore.WHITE}███████{Fore.RED}╗
                      {Fore.LIGHTRED_EX}╚═╝     ╚{Fore.RED}═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝       {Fore.LIGHTRED_EX}╚═╝    ╚═════╝  ╚═════╝ ╚{Fore.RED}══════╝""")
         print(f"{Fore.LIGHTRED_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.LIGHTRED_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    if theme == "purple":
+    elif theme == "purple":
         print(Fore.MAGENTA+"")
         print(f"""                     {Fore.WHITE}███{Fore.LIGHTMAGENTA_EX}╗   {Fore.WHITE}███{Fore.MAGENTA}╗{Fore.WHITE}██{Fore.MAGENTA}╗   {Fore.WHITE}██{Fore.MAGENTA}╗{Fore.WHITE}██{Fore.MAGENTA}╗  {Fore.WHITE}████████{Fore.MAGENTA}╗{Fore.WHITE}██{Fore.MAGENTA}╗    {Fore.WHITE}████████{Fore.LIGHTMAGENTA_EX}╗ {Fore.WHITE}██████{Fore.LIGHTMAGENTA_EX}╗  {Fore.WHITE}██████{Fore.LIGHTMAGENTA_EX}╗ {Fore.WHITE}██{Fore.MAGENTA}╗               
                      {Fore.WHITE}████{Fore.LIGHTMAGENTA_EX}╗ {Fore.WHITE}████{Fore.MAGENTA}║{Fore.WHITE}██{Fore.MAGENTA}║   {Fore.WHITE}██{Fore.MAGENTA}║{Fore.WHITE}██{Fore.MAGENTA}║  ╚══{Fore.WHITE}██{Fore.MAGENTA}╔══╝{Fore.WHITE}██{Fore.MAGENTA}║    {Fore.LIGHTMAGENTA_EX}╚══{Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}╔══╝{Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}╔═══{Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}╗{Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}╔═══{Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}╗{Fore.WHITE}██{Fore.MAGENTA}║
@@ -60,7 +60,7 @@ def menu():
                      {Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}║ ╚═╝ {Fore.WHITE}██{Fore.MAGENTA}║╚{Fore.WHITE}██████{Fore.MAGENTA}╔╝{Fore.WHITE}███████{Fore.MAGENTA}╗{Fore.WHITE}██{Fore.MAGENTA}║   {Fore.WHITE}██{Fore.MAGENTA}║       {Fore.WHITE}██{Fore.LIGHTMAGENTA_EX}║   ╚{Fore.WHITE}██████{Fore.LIGHTMAGENTA_EX}╔╝╚{Fore.WHITE}██████{Fore.LIGHTMAGENTA_EX}╔╝{Fore.WHITE}███████{Fore.MAGENTA}╗
                      {Fore.LIGHTMAGENTA_EX}╚═╝     ╚{Fore.MAGENTA}═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝       {Fore.LIGHTMAGENTA_EX}╚═╝    ╚═════╝  ╚═════╝ ╚{Fore.MAGENTA}══════╝""")
         print(f"{Fore.LIGHTMAGENTA_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.MAGENTA}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.LIGHTMAGENTA_EX}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.MAGENTA}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    if theme == "green":
+    elif theme == "green":
         print(Fore.GREEN+"")
         print(f"""                     {Fore.WHITE}███{Fore.LIGHTGREEN_EX}╗   {Fore.WHITE}███{Fore.GREEN}╗{Fore.WHITE}██{Fore.GREEN}╗   {Fore.WHITE}██{Fore.GREEN}╗{Fore.WHITE}██{Fore.GREEN}╗  {Fore.WHITE}████████{Fore.GREEN}╗{Fore.WHITE}██{Fore.GREEN}╗    {Fore.WHITE}████████{Fore.LIGHTGREEN_EX}╗ {Fore.WHITE}██████{Fore.LIGHTGREEN_EX}╗  {Fore.WHITE}██████{Fore.LIGHTGREEN_EX}╗ {Fore.WHITE}██{Fore.GREEN}╗               
                      {Fore.WHITE}████{Fore.LIGHTGREEN_EX}╗ {Fore.WHITE}████{Fore.GREEN}║{Fore.WHITE}██{Fore.GREEN}║   {Fore.WHITE}██{Fore.GREEN}║{Fore.WHITE}██{Fore.GREEN}║  ╚══{Fore.WHITE}██{Fore.GREEN}╔══╝{Fore.WHITE}██{Fore.GREEN}║    {Fore.LIGHTGREEN_EX}╚══{Fore.WHITE}██{Fore.LIGHTGREEN_EX}╔══╝{Fore.WHITE}██{Fore.LIGHTGREEN_EX}╔═══{Fore.WHITE}██{Fore.LIGHTGREEN_EX}╗{Fore.WHITE}██{Fore.LIGHTGREEN_EX}╔═══{Fore.WHITE}██{Fore.LIGHTGREEN_EX}╗{Fore.WHITE}██{Fore.GREEN}║
@@ -497,21 +497,21 @@ def options():
         print(f"                    {Fore.LIGHTCYAN_EX}[{w}3{Fore.LIGHTCYAN_EX}]  {w}Modify webhook                                           Disable token  {Fore.BLUE}[{w}7{Fore.BLUE}]")
         print(f"                    {Fore.LIGHTCYAN_EX}[{w}4{Fore.LIGHTCYAN_EX}]  {w}Webhook info                                                Nuke token  {Fore.BLUE}[{w}8{Fore.BLUE}]")
         print(f"                    {Fore.LIGHTCYAN_EX}└─────────{Fore.CYAN}──────────────────────────────{Fore.LIGHTBLUE_EX}──────────────────────────────{Fore.BLUE}─────────┘")
-    if theme == "red":
+    elif theme == "red":
         print(f"                    {Fore.LIGHTRED_EX}┌─────────{Fore.RED}──────────────────────────────{Fore.LIGHTRED_EX}──────────────────────────────{Fore.RED}─────────┐")
         print(f"                    {Fore.LIGHTRED_EX}[{w}1{Fore.LIGHTRED_EX}]  {w}Delete webhook                                              Token info  {Fore.RED}[{w}5{Fore.RED}]")
         print(f"                    {Fore.LIGHTRED_EX}[{w}2{Fore.LIGHTRED_EX}]  {w}Spam webhook                                                Open token  {Fore.RED}[{w}6{Fore.RED}]")
         print(f"                    {Fore.LIGHTRED_EX}[{w}3{Fore.LIGHTRED_EX}]  {w}Modify webhook                                           Disable token  {Fore.RED}[{w}7{Fore.RED}]")
         print(f"                    {Fore.LIGHTRED_EX}[{w}4{Fore.LIGHTRED_EX}]  {w}Webhook info                                                Nuke token  {Fore.RED}[{w}8{Fore.RED}]")
         print(f"                    {Fore.LIGHTRED_EX}└─────────{Fore.RED}──────────────────────────────{Fore.LIGHTRED_EX}──────────────────────────────{Fore.RED}─────────┘")
-    if theme == "purple":
+    elif theme == "purple":
         print(f"                    {Fore.LIGHTMAGENTA_EX}┌─────────{Fore.MAGENTA}──────────────────────────────{Fore.LIGHTMAGENTA_EX}──────────────────────────────{Fore.MAGENTA}─────────┐")
         print(f"                    {Fore.LIGHTMAGENTA_EX}[{w}1{Fore.LIGHTMAGENTA_EX}]  {w}Delete webhook                                              Token info  {Fore.MAGENTA}[{w}5{Fore.MAGENTA}]")
         print(f"                    {Fore.LIGHTMAGENTA_EX}[{w}2{Fore.LIGHTMAGENTA_EX}]  {w}Spam webhook                                                Open token  {Fore.MAGENTA}[{w}6{Fore.MAGENTA}]")
         print(f"                    {Fore.LIGHTMAGENTA_EX}[{w}3{Fore.LIGHTMAGENTA_EX}]  {w}Modify webhook                                           Disable token  {Fore.MAGENTA}[{w}7{Fore.MAGENTA}]")
         print(f"                    {Fore.LIGHTMAGENTA_EX}[{w}4{Fore.LIGHTMAGENTA_EX}]  {w}Webhook info                                                Nuke token  {Fore.MAGENTA}[{w}8{Fore.MAGENTA}]")
         print(f"                    {Fore.LIGHTMAGENTA_EX}└─────────{Fore.MAGENTA}──────────────────────────────{Fore.LIGHTMAGENTA_EX}──────────────────────────────{Fore.MAGENTA}─────────┘")
-    if theme == "green":
+    elif theme == "green":
         print(f"                    {Fore.LIGHTGREEN_EX}┌─────────{Fore.GREEN}──────────────────────────────{Fore.LIGHTGREEN_EX}──────────────────────────────{Fore.GREEN}─────────┐")
         print(f"                    {Fore.LIGHTGREEN_EX}[{w}1{Fore.LIGHTGREEN_EX}]  {w}Delete webhook                                              Token info  {Fore.GREEN}[{w}5{Fore.GREEN}]")
         print(f"                    {Fore.LIGHTGREEN_EX}[{w}2{Fore.LIGHTGREEN_EX}]  {w}Spam webhook                                                Open token  {Fore.GREEN}[{w}6{Fore.GREEN}]")
