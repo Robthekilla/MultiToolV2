@@ -11,7 +11,7 @@ Discord Multi Tool that focuses on design and easy usage
 
 ## Setup
 - ```git clone https://github.com/Lodisus/Multi-Tool-v1.0```
-- ```pip install requirements.txt```
+- ```pip install -r requirements.txt```
 - ```python main.py```
 ### Credits:
 https://github.com/wodxgod/DTI
